@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Hammock Camping</title>
+        <meta property="og:title" content="Your Name's Links" />
+        <meta property="og:site_name" content="yourdomain.com" />
+        <meta property="og:description" content="A list of Your Name's most important links." />
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="theme-color" content="var(--bgColor)">
+    </head>
+    <body>
+            <!--Page Content Below-->
+        <img id="userPhoto" class="animated rubberBand fast" src="images/hangmatkamperen.jpg" alt="Your Name's Photo">
+        <h1 class="animated jello">Hangmat Kamperen</h1>
+        <div id="links" class="links animated fadeInLeft delay-1s">
+            <a class="link" href="https://www.instagram.com/hangmat.kamperen" target="_blank">Instagram</a>
+            <a class="link" href="https://www.facebook.com/hangmatkamperen" target="_blank">Facebook</a>
+            <a class="link" href="http://hammock-camping.myspreadshop.nl/" target="_blank">Webshop</a>
+        </div>
+        <h2 class="animated fadeInLeft delay-1s">Friends</h2>
+        <div id="links" class="friends links animated fadeInLeft delay-1s">
+            <a class="link" href="https://www.dutchhammockstore.nl/" target="_blank">Dutch Hammock Store</a>
+            <a class="link" href="https://backpackinglight.nl/ target="_blank">Backpackinglight</a>
+            <a class="link" href="https://www.dutchbushcraftdad.com/" target="_blank">Dutch Bushcraft Dad</a>
+        </div>
+        <script>[...document.querySelectorAll('.friends a')].map(value => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value).forEach(friend=>{ document.querySelector('.friends').insertAdjacentElement('beforeend', friend); });</script>
+    </body>
+</html>
